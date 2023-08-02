@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-font: 2rem;
+    --btn-font: 1rem;
+    --tr-font: 1rem;
+    --th-font: 1rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 300px) {
+    :root {
+        --heading-font: 1rem;
+        --btn-font: .4rem;
+        --tr-font: .4rem;
+        --th-font: .4rem;
+    }
+}
+
+/*.table-striped tbody tr:nth-child(2n) td, 
+.table-striped tbody tr:nth-child(2n) th {
+    background-color: rgb(91, 143, 241) !important;
+}
+
+.table-striped tbody tr:nth-child(2n+1) td, 
+.table-striped tbody tr:nth-child(2n+1) th {
+    background-color: rgb(104, 253, 203) !important;
+}*/
+
+.table-striped tbody tr td {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: var(--tr-font);
+}
+
+.table-striped thead th {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: var(--th-font);
+}
+
+.table-striped tbody tr:hover {
+    filter: drop-shadow(.2em .2em .2em rgb(206, 206, 206));
+    transform: translateY(-.5rem);
+    transition: all .5s;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--heading-font);
+}
+
+html {
+    font-size: 100%;
+}
+
+.addnew {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.test1{
+    margin: 3rem;
+}
+
+.btn{
+    font-size: var(--btn-font);
+}
+
+.btn:hover{
+    filter: drop-shadow(.2em .2em .2em rgb(39, 39, 255));
+    transform: translateY(-.5rem);
+    transition: all .5s;
+}
+
+.inputelement{
+    display: flex;
+    flex-direction: column;
+    margin: .5em;
+    padding: .5em;
+    border: solid 1px rgb(226, 226, 226);
+}
