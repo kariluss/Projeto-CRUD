@@ -4,7 +4,8 @@ Projeto CRUD simples de gerenciamento de alunos usando:
  - MySQL,
  - Javascript,
  - JQuery, 
- - Ajax, 
+ - Ajax,
+ - Bootstrap 5, 
  - HTML5 e 
  - CSS.
 
